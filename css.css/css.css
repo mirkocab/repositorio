@@ -46,5 +46,17 @@ body{
 }
 
 .perfil{
-    height: 60vh;
+    height: 40vh;
+}
+
+.form{
+    width: 320px;
+}
+
+.form2{
+    height: 50vh;
+}
+
+.form3{
+    text-align: center;
 }
