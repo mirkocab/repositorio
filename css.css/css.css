@@ -22,9 +22,6 @@ body{
 .hero__footer{
     background: rgb(250,212,212);
     background: linear-gradient(90deg, rgba(250,212,212,1) 53%, rgba(250,212,212,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .carousel-inner{
@@ -46,4 +43,8 @@ body{
 
 .hero__div{
     text-align: center;
+}
+
+.perfil{
+    height: 60vh;
 }
