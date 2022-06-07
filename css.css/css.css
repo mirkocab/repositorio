@@ -1,6 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Joan', serif;
+    font-size: large;
 }
 
 body{
@@ -22,6 +24,9 @@ body{
 .hero__footer{
     background: rgb(250,212,212);
     background: linear-gradient(90deg, rgba(250,212,212,1) 53%, rgba(250,212,212,1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
 }
 
 .carousel-inner{
@@ -59,4 +64,9 @@ body{
 
 .form3{
     text-align: center;
+}
+
+i{
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
 }
