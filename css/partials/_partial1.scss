@@ -1,3 +1,5 @@
+@import "./var";
+
 *{
     padding: 0px;
     margin: 0px;
@@ -12,18 +14,15 @@ body{
 }
 
 .hero__header{
-    background: rgb(244,124,124);
-    background: linear-gradient(90deg, rgba(244,124,124,1) 53%, rgba(244,124,124,1) 100%);
+    background: $colorheader;
 }
 
 .hero__main{
-    background: rgb(239,159,159);
-    background: linear-gradient(90deg, rgba(239,159,159,1) 53%, rgba(239,159,159,1) 100%);
+    background: $colormain;
 }
 
 .hero__footer{
-    background: rgb(250,212,212);
-    background: linear-gradient(90deg, rgba(250,212,212,1) 53%, rgba(250,212,212,1) 100%);
+    background: $colorfooter;
     display: flex;
     justify-content: center;
     padding: 1rem 0rem;
@@ -42,12 +41,25 @@ body{
     height: 40vh;
 }
 
-.hero__p{
-    text-align: center;
-}
 
 .hero__div{
     text-align: center;
+}
+
+.hero__servip{
+    font-size: 2rem;
+}
+
+.hero__prodp{
+    font-size: 1.3rem;
+}
+
+.hero__indexp{
+    font-size: 1.3rem
+}
+.hero__p{
+    @extend .hero__div;
+    justify-content: center;
 }
 
 .perfil{
@@ -72,26 +84,21 @@ i{
 }
 
 .servicios{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    @include padding;
 }
 
 .productos{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    @include padding;
 }
 
 .nosotros{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    @include padding;
 }
 
 .contacto{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    @include padding;
 }
 
 .inicio{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    @include padding;
 }

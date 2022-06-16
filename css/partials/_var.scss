@@ -1,3 +1,8 @@
 $colorheader: rgb(244,124,124) linear-gradient(90deg, rgba(244,124,124,1) 53%, rgba(244,124,124,1) 100%);
 $colormain:rgb(239,159,159) linear-gradient(90deg, rgba(239,159,159,1) 53%, rgba(239,159,159,1) 100%);
-$colorfooter: rgb(239,159,159) linear-gradient(90deg, rgba(239,159,159,1) 53%, rgba(239,159,159,1) 100%);
+$colorfooter: rgb(250,212,212)linear-gradient(90deg, rgba(250,212,212,1) 53%, rgba(250,212,212,1) 100%);
+
+@mixin padding{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
