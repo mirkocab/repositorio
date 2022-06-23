@@ -42,15 +42,15 @@ body{
 }
 
 .hero__servip{
-    font-size: 2rem;
+    font-size: map-get($map:$estilos, $key: mediano);
 }
 
 .hero__prodp{
-    font-size: 1.3rem;
+    font-size: map-get($map:$estilos, $key: chico);
 }
 
 .hero__indexp{
-    font-size: 1.3rem
+    font-size: map-get($map:$estilos, $key: chico)
 }
 .hero__p{
     @extend .hero__div;
@@ -97,4 +97,3 @@ i{
 .inicio{
     @include padding;
 }
-
