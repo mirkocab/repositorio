@@ -50,8 +50,9 @@ body{
 }
 
 .hero__indexp{
-    font-size: map-get($map:$estilos, $key: chico)
+    font-size: map-get($map:$estilos, $key: chico);
 }
+
 .hero__p{
     @extend .hero__div;
     justify-content: center;
