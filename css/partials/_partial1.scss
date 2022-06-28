@@ -111,6 +111,9 @@ h1, h2, h3{
     font-size: 2rem;
 }
 
+h4{
+    text-decoration: underline;
+}
 .h1_servi{
     display: flex;
     justify-content: center;
@@ -118,4 +121,14 @@ h1, h2, h3{
 
 a{
     color: black;
+}
+
+.img-thumbnail{
+    background-color: black;
+    border: none;
+}
+
+.hero_margin{
+    margin-left: auto;
+    margin-right: auto;
 }
