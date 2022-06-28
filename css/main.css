@@ -41,15 +41,23 @@ body {
 }
 
 .hero__servip {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero__prodp {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .hero__indexp {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.hero_nosop {
+  font-size: 1.5rem;
+}
+
+.hero_contap {
+  font-size: 1.5rem;
 }
 
 .hero__p {
@@ -100,4 +108,17 @@ i {
 .inicio {
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  font-size: 2rem;
+}
+
+.h1_servi {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: black;
 }/*# sourceMappingURL=main.css.map */

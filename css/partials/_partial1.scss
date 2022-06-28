@@ -42,7 +42,7 @@ body{
 }
 
 .hero__servip{
-    font-size: map-get($map:$estilos, $key: mediano);
+    font-size: map-get($map:$estilos, $key: chico);
 }
 
 .hero__prodp{
@@ -51,6 +51,14 @@ body{
 
 .hero__indexp{
     font-size: map-get($map:$estilos, $key: chico);
+}
+
+.hero_nosop{
+    font-size: map-get($map: $estilos, $key:chico )
+}
+
+.hero_contap{
+    font-size: map-get($map: $estilos, $key:chico )
 }
 
 .hero__p{
@@ -97,4 +105,17 @@ i{
 
 .inicio{
     @include padding;
+}
+
+h1, h2, h3{
+    font-size: 2rem;
+}
+
+.h1_servi{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: black;
 }
