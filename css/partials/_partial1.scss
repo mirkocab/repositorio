@@ -54,11 +54,11 @@ body{
 }
 
 .hero_nosop{
-    font-size: map-get($map: $estilos, $key:chico )
+    font-size: map-get($map:$estilos, $key:chico )
 }
 
 .hero_contap{
-    font-size: map-get($map: $estilos, $key:chico )
+    font-size: map-get($map:$estilos, $key:chico )
 }
 
 .hero__p{
