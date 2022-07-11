@@ -59,6 +59,10 @@ i {
 }
 
 /*inicio*/
+.index__pad {
+  margin-top: 0.5rem;
+}
+
 .carousel-inner {
   height: 60vh;
   -o-object-fit: cover;
