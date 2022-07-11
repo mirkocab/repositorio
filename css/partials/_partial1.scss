@@ -13,6 +13,10 @@ body{
     height: 100vh;
 }
 
+
+  /*Abarca todo*/
+
+
 .hero__header{
     background: $colorheader;
 }
@@ -28,6 +32,44 @@ body{
     padding: 1rem 0rem;
 }
 
+h1, h2, h3{
+    font-size: 2rem;
+}
+
+
+
+a{
+    color: black;
+}
+
+.img-thumbnail{
+    background-color: black;
+    border: none;
+}
+
+.hero__p{
+    padding: 1rem 2rem;
+    @extend .hero__div;
+    justify-content: center;
+}
+
+i{
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.05);
+}
+
+
+/*inicio*/
+
+
 .carousel-inner{
     height: 60vh;
     object-fit: cover;
@@ -37,37 +79,123 @@ body{
     height: 40vh;
 }
 
-.hero__div{
-    text-align: center;
-}
-
-.hero__servip{
-    font-size: map-get($map:$estilos, $key: chico);
-}
-
-.hero__prodp{
-    font-size: map-get($map:$estilos, $key: chico);
+.inicio{
+    @include padding;
 }
 
 .hero__indexp{
     font-size: map-get($map:$estilos, $key: chico);
 }
 
+.hero_ig{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 2rem;
+    text-align: center;
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+
+.animacion{
+        opacity: 0;
+        filter: blur(4px);
+}
+
+.animacion:nth-child(1) {
+        animation: fade-in 2s 0.1s forwards ;
+}
+
+
+/*Productos*/
+
+
+.hero__div{
+    text-align: center;
+}
+
+.productos{
+    @include padding;
+}
+
+
+.hero__prodp{
+    font-size: map-get($map:$estilos, $key: chico);
+    padding: 0rem 1.5rem;
+}
+
+.animacion2{
+    animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.animacion3{
+    animation: 4s anim-lineUp ease-out;
+}
+
+
+.animacion4{
+    animation: 6s anim-lineUp ease-out;
+}
+
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+/*Nosotros*/
+
+
 .hero_nosop{
     font-size: map-get($map:$estilos, $key:chico)
 }
 
-.hero_contap{
-    font-size: map-get($map:$estilos, $key:chico)
-}
-
-.hero__p{
-    @extend .hero__div;
-    justify-content: center;
-}
-
 .perfil{
     height: 40vh;
+}
+
+.nosotros{
+    @include padding;
+}
+
+.hero_margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h4{
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+/*Contactos*/
+
+
+.hero_contap{
+    font-size: map-get($map:$estilos, $key:chico)
 }
 
 .form{
@@ -82,53 +210,55 @@ body{
     text-align: center;
 }
 
-i{
-    font-size: 1.5rem;
-    padding: 0rem 1rem;
+.contacto{
+    @include padding;
 }
+
+
+  /*Servicios*/
+
 
 .servicios{
     @include padding;
 }
 
-.productos{
-    @include padding;
-}
-
-.nosotros{
-    @include padding;
-}
-
-.contacto{
-    @include padding;
-}
-
-.inicio{
-    @include padding;
-}
-
-h1, h2, h3{
-    font-size: 2rem;
-}
-
-h4{
-    text-decoration: underline;
-}
 .h1_servi{
+    animation: 1.5s anim-line ease-out;
     display: flex;
     justify-content: center;
 }
 
-a{
-    color: black;
+.hero__servip{
+    font-size: map-get($map:$estilos, $key: chico);
 }
 
-.img-thumbnail{
-    background-color: black;
-    border: none;
-}
+.animacion5{
+    animation: 7.5s anim-line ease-out;
+  }
 
-.hero_margin{
-    margin-left: auto;
-    margin-right: auto;
+.animacion6{
+    animation: 10s anim-line ease-out;
 }
+.animacion7{
+    animation: 2.5s anim-line ease-out;
+}
+.animacion8{
+    animation: 5s anim-line ease-out;
+}
+  @keyframes anim-line {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
